@@ -53,7 +53,7 @@ var app = new Vue({
   },
 
   // computed properties
-  // http://vuejs.org/guide/computed.html
+ 
   computed: {
     filteredTodos: function () {
       return filters[this.visibility](this.todos)
@@ -125,9 +125,7 @@ var app = new Vue({
     }
   },
 
-  // a custom directive to wait for the DOM to be updated
-  // before focusing on the input field.
-  // http://vuejs.org/guide/custom-directive.html
+ 
   directives: {
     'todo-focus': function (el, binding) {
       if (binding.value) {
